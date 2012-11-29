@@ -7,7 +7,7 @@ void comb_sort(data array[], int len) {
 	data tmp; // temporary variable used to swap elements
 	while (gap > 1 || swaps) {
 		if (gap > 1) // update the gap value
-			gap /= 1.24;
+			gap /= 1.247330950103979;
 		swaps = 0; // reset the swaps flag
 		for (i = 0; i+gap < len; i++)
 			if (array[i] > array[i+gap]) {
@@ -28,7 +28,7 @@ void comb_sort_debug(data array[], int len, STAT *stat) {
 	stat->allo++;
 	while (gap > 1 || swaps) {
 		if (gap > 1) // update the gap value
-			gap /= 1.24;
+			gap /= 1.247330950103979;
 		swaps = 0; // reset the swaps flag
 		for (i = 0; i+gap < len; i++) {
 			if (array[i] > array[i+gap]) {
