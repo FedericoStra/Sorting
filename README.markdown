@@ -35,7 +35,7 @@ The algorithms implemented are divided in two groups depending on their performa
   * insertion\_sort,
   * selection\_sort.
 
-`sorting` performs sorting on different types of arrays in order to emphasize different characteristics of the algorithms (shuch as adaptiveness).
+`sorting` performs sorting on different types of arrays in order to emphasize different characteristics of the algorithms (such as adaptiveness).
 
 It currently sorts arrays of *length - type*:
 
