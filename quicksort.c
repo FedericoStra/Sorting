@@ -1,4 +1,5 @@
 #include "quicksort.h"
+#include <stdlib.h>
 
 void quick_sort(data array[], int len) {
 	if (len > 1) {
