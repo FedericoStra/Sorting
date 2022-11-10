@@ -24,8 +24,8 @@ void quick_fast_sort(data array[], int len) {
 	if (len > 1) {
 		int pivot_index = rand()%(len-1); // choose pivot
 		int pivot_new_index = partition_fast(array, len, pivot_index); // partition the array and get the new pivot position
-		quick_sort(array, pivot_new_index); // quick sort the first part
-		quick_sort(array+pivot_new_index+1, len-pivot_new_index-1); // quick sort the second part
+		quick_fast_sort(array, pivot_new_index); // quick sort the first part
+		quick_fast_sort(array+pivot_new_index+1, len-pivot_new_index-1); // quick sort the second part
 	}
 }
 
@@ -33,8 +33,8 @@ void quick_fast_sort_debug(data array[], int len, STAT *stat) {
 	if (len > 1) {
 		int pivot_index = rand()%(len-1); // choose pivot
 		int pivot_new_index = partition_fast_debug(array, len, pivot_index, stat); // partition the array and get the new pivot position
-		quick_sort_debug(array, pivot_new_index, stat); // quick sort the first part
-		quick_sort_debug(array+pivot_new_index+1, len-pivot_new_index-1, stat); // quick sort the second part
+		quick_fast_sort_debug(array, pivot_new_index, stat); // quick sort the first part
+		quick_fast_sort_debug(array+pivot_new_index+1, len-pivot_new_index-1, stat); // quick sort the second part
 		stat->recc += 2;
 	}
 }
